@@ -1,0 +1,185 @@
+<index class="html"></index>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000">
+    <title>SportSphere | Games & Athletics</title>
+    <style>
+        :root {
+            --primary: #00ff88;
+            /* High-visibility Neon Green */
+            --bg: #111;
+            --card-bg: #222;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            min-width: 1000px;
+        }
+
+        /* NAVIGATION */
+        header {
+            background: #000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .logo {
+            font-size: 28px;
+            color: var(--primary);
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* SEARCH SECTION */
+        .search-area {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1000');
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .search-area h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .main-search {
+            width: 60%;
+            padding: 20px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        /* SPORTS GRID */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .game-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-tag {
+            background: var(--primary);
+            color: black;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SportSphere.com</div>
+        <nav>
+            <a href="#">LIVE SCORES</a>
+            <a href="#">TOURNAMENTS</a>
+            <a href="#">GAMING GEAR</a>
+            <a href="#">COMMUNITY</a>
+        </nav>
+    </header>
+
+    <section class="search-area">
+        <h1>FIND YOUR <span>GAME</span></h1>
+        <input type="text" class="main-search" placeholder="Search for Football, Basketball, eSports...">
+    </section>
+
+    <main class="game-grid">
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=400">
+            <div class="game-info">
+                <span class="category-tag">Athletics</span>
+                <h3>Football Masters</h3>
+                <p>Join the 2026 local league matches.</p>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400">
+            <div class="game-info">
+                <span class="category-tag">eSports</span>
+                <h3>Arena Pro Gaming</h3>
+                <p>Register for the national PC tournament.</p>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=400">
+            <div class="game-info">
+                <span class="category-tag">Basketball</span>
+                <h3>Hoops Night</h3>
+                <p>Weekly training sessions for all ages.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SportSphere Hub | Your Ultimate Game Connection</p>
+    </footer>
+
+</body>
+
+</html>
